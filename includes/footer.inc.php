@@ -17,7 +17,7 @@
         
         <footer id="site-footer">
             <div class="center-content">
-                <p>Facebook style nav prototype base, Gareth Fuller</p>
+                <p>Standard style nav prototype base, Gareth Fuller</p>
             </div>
         </footer>
 

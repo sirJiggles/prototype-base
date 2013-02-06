@@ -1,12 +1,30 @@
 
 @mixin mobile-land-styles(){
 
-
-    .mobile-nav{
-        display:none;
+    #header{
+        height:100%;
+        width:8%;
+        padding:0 1%;
+        border-right:3px solid #999999;
+        border-bottom:none;
+    }
+    
+    #main-nav ul{
+        margin:0 0 -45px 0;
+    }
+    
+    #site-wrapper,
+    #site-footer{
+        padding-left:10%;
+        width:90%;
     }
 
-    #main-nav{
+    .mobile-nav{
+        //display:none;
+    }
+
+    /*#main-nav{
+        display:block !important;
         position:fixed;
         z-index: 4;
         width: 96%;
@@ -14,11 +32,11 @@
         left: 0;
         height:auto;
         top:0;
-        @include no-drop-shadow();
     }
 
     #main-nav ul{
         border-left:1px solid #444;
+        border-bottom:none;
         margin:0;
     }
 
@@ -42,27 +60,8 @@
     }
 
 
-
-    body.css-nav-open #main-nav,
-    #main-nav{
-        left:0 !important;
-        position: fixed;
-    }
-
-    body.css-nav-open #main,
-    #main{
-        width:100%;
-        left:0 !important;
-        position:relative;
-    }
-
-    body.css-nav-open .push,
-    .push
-    body.css-nav-open #site-footer,
-    #site-footer{
-        display:block;
-    }
-
+*/
+  
     // ACCORDIAN
     #accordian .accordian-slide{
         border-left:3px solid $secondary-color;

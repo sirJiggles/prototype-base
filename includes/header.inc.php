@@ -15,7 +15,7 @@ $currentPage = str_replace('.php', '', end(explode('/', $_SERVER['SCRIPT_FILENAM
 <html lang="en" class="no-js">
     <head>
 
-    	<title>Facebook style prototypes</title>
+    	<title>Standard style prototypes</title>
             
         <!--[if lt IE 9]>
             <script src="assets/js/vendor/htmlshiv.min.js"></script>
@@ -55,11 +55,24 @@ $currentPage = str_replace('.php', '', end(explode('/', $_SERVER['SCRIPT_FILENAM
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
         
     </head>
-    <body class="new">
+    <body>
 
-        <!-- Main navigation -->
-        <nav id="main-nav" role="navigation" class="col grid-12 end">
-            <div class="center-content">
+        <!-- used for sticky footer -->
+        <div id="site-wrapper">
+
+            <header id="header" class="col grid-12 end" role="banner">
+                <div class="center-content">
+
+                    <a href="#" class="mobile-nav" title="Main navigation"><span class="icon">&#9776;</span></a>
+                    
+                    
+
+                    <h1>SITE TITLE</h1>
+
+                </div>
+            </header>
+            
+            <nav id="main-nav" role="navigation" class="col grid-12 end">
                 <ul>
                     <li><a href="index.php" title="Home" <?php echo ($currentPage == 'index') ? "class='active'" : ''; ?>>Home</a></li>
                     <li><a href="article.php" title="Article" <?php echo ($currentPage == 'article') ? "class='active'" : ''; ?>>Article</a></li>
@@ -68,26 +81,7 @@ $currentPage = str_replace('.php', '', end(explode('/', $_SERVER['SCRIPT_FILENAM
                     <li><a href="accordion.php" title="Accordion" <?php echo ($currentPage == 'accordion') ? "class='active'" : ''; ?>>Accordion</a></li>
                     <li><a href="contact.php" title="Contact" <?php echo ($currentPage == 'contact') ? "class='active'" : ''; ?>>Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-    
-        <!-- used for sticky footer -->
-        <div id="site-wrapper">
-
-            <header id="header" class="col grid-12 end" role="banner">
-                <div class="center-content">
-
-                    <a href="#" class="mobile-nav" title="Main navigation"><span class="icon">&#9776;</span></a>
-
-                    <h1>SITE TITLE</h1>
-
-                </div>
-            </header>
-
-            
-            
-            
-            
+            </nav>
 
             <div class="center-content main-content" id="main-wrapper">
 
