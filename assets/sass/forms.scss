@@ -1,0 +1,103 @@
+/* Form styles */
+
+@import "_mixins.scss";
+@import "_global-vars.scss";
+
+/* CSS validation overrides */
+:required {}
+
+:optional {}
+
+:valid {}
+
+:invalid {}
+
+:default {}
+
+:in-range {}
+
+:out-of-range {}
+
+form {
+
+}
+
+
+form fieldset {
+    @include block-left;
+    width: 100%;
+}
+
+form label {
+    width:100%;
+    float: left;
+    padding: 0 0 2% 0;
+    line-height: 1.8em;
+}
+
+form legend {
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    float: left;
+    width: 96%;
+    background-color: $secondary-color;
+    padding: 10px 2% 10px 2%;
+    color: white;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='date'],
+form input[type='number'],
+form input[type='tel'],
+form textarea{
+    border:none;
+    @include rounded(15);
+    @include inset-shadow(1px, 1px, 5px, 0px);
+}
+
+
+form input {
+    width: 92%;
+    padding:4%;
+    margin: 0 0 2% 0;
+}
+
+form input[type='search'] {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box; 
+    box-sizing:content-box;
+    border:none;
+    @include rounded(15);
+    @include inset-shadow(1px, 1px, 5px, 0px); 
+}
+
+form textarea{
+    height:200px;
+    width:99%;
+    @include rounded(5);
+    margin: 0 0 2% 0;
+}
+
+form input[type='submit']{
+   border:none;
+   overflow:visible;
+   font-weight:400;
+   color:white;
+}
+
+form input[type='submit']:hover,
+form input[type='submit']:active{
+    
+} 
+
+/* New input types */
+progress,
+meter {
+  width: 100%;
+  margin: 0 0 4% 0;
+  display: block;
+  float: left;
+}

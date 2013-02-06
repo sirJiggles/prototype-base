@@ -1,0 +1,40 @@
+/* Styles for the Grid */
+
+@import "_mixins.scss";
+@import "_global-vars.scss";
+
+.center-content {
+  margin: 0 auto;
+  max-width: $site-width+px;
+  width: 90%;
+  padding: 0 5% 0 5%;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin:0;
+}
+
+.row {
+  margin: 0 0 20px 0;
+  float: left;
+  width: 100%;
+}
+
+/* Mobile Grid Styles */
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12{
+    width:100%;
+    margin:0 0 $gutter-width 0;
+}

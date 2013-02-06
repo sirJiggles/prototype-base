@@ -1,0 +1,61 @@
+/* Responsive styles 
+
+Mobile first css,
+
+the mixins is where you want to put the styles, the mixins are both used here and in IE stylesheet 
+
+DEVICES
+
+used list of top selling (wikkipedia) for last 2 years as most people have 2 year contract's
+
+MOBILE PHONES
+
+DEVICE                  | WIDTH     | HEIGHT    | PPI   | YEAR      | OS                |
+HTC Desire HD           | 480       | 800       | 217   | 2010      | Android           |
+IPhone 4/4s             | 640       | 960       | 326   | 2010/11   | iOS               |
+Galaxy S II             | 480       | 800       | 218   | 2011      | Jellybean (A)     |
+Galaxy Y                | 240       | 320       | 133   | 2011      | Gingerbeard (A)   |
+HTC Thunderbolt         | 480       | 800       | 215   | 2011      | Gingerbeard (A)   |
+HTC EVO 4G              | 480       | 800       | 217   | 2011      | Android           |
+Motorola Droid Bionic   | 540       | 960       | 256   | 2011      | Android 4.0 (Ice) |
+Samsung Infuse          | 480       | 800       | 207   | 2011      | Android 2.3.6     |
+ZTE Blade               | 480       | 800       | 267   | 2011      | Android           |
+IPhone 5                | 640       | 1136      | 326   | 2012      | iOS               |
+Nokia Lumia             | 768       | 1280      | 332   | 2012      | Windows           |
+Samsung Galaxy S3       | 780       | 1280      | 306   | 2012      | Android 4.0 (Ice) |
+
+TABLETS
+
+DEVICE                  | WIDTH     | HEIGHT    | PPI   | YEAR      | OS                |
+Ipad 2                  | 1024      | 768       | 132   | 2011      | iOS               |
+Ipad mini               | 1024      | 768       | 163   | 2012      | iOS               |
+IPad 3                  | 2048      | 1536      | 264   | 2012      | iOS               |
+
+*/
+
+@import "_mixins.scss";
+@import "_global-vars.scss";
+@import "_media_mixins.scss";
+
+
+/* MOBILE LANDSCAPE UP */
+@media only screen and (min-width: $mobile){
+
+    @include mobile-land-styles();
+
+}
+
+/* TABLET UP */
+@media only screen and (min-width: $tablet){
+
+    @include tablet-styles();
+
+}
+
+/* DESKTOP UP (THESE ARE IE8 AND UP) */
+@media only screen and (min-width: $desktop){
+
+    @include desktop-styles();
+
+}
+

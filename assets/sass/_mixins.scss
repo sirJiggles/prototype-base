@@ -1,0 +1,131 @@
+
+@mixin em-font($px:12){
+    font-size:(1 / $base-font) * $px + em;
+}
+
+@mixin em-line-height($px:12){
+    line-height:((1 / $base-font) * $px) + (((1 / $base-font) * $px) / 2) + em;
+}  
+
+@mixin block-left(){
+    display:block;
+    float:left;
+}
+
+@mixin reset-box(){
+    padding:0;
+    margin:0;
+}
+    
+@mixin rounded($radius: 5) { 
+    -webkit-border-radius: $radius+px;
+    -moz-border-radius: $radius+px;
+    border-radius: $radius+px;
+}
+
+@mixin custom-font(){
+    font-family: 'Montserrat', sans-serif;
+}
+    
+
+@mixin custom-rounded($top:5, $right:5, $bottom:5, $left:5){
+    -webkit-border-top-left-radius: $top+px;
+    -webkit-border-top-right-radius: $right+px;
+    -webkit-border-bottom-left-radius: $left+px;
+    -webkit-border-bottom-right-radius: $bottom+px;
+    -moz-border-radius-topleft: $top+px;
+    -moz-border-radius-topright: $right+px;
+    -moz-border-radius-bottomleft: $left+px;
+    -moz-border-radius-bottomright: $bottom+px;
+    border-top-left-radius: $top+px;
+    border-top-right-radius: $right+px;
+    border-bottom-left-radius: $left+px;
+    border-bottom-right-radius: $bottom+px;
+}
+
+@mixin no-rounded(){
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+}
+
+@mixin drop-shadow($left-offset:0, $top-offset:5px, $blur:5px, $height:0, $color:#222){
+    -moz-box-shadow: $left-offset $top-offset $blur $height $color;
+    -webkit-box-shadow: $left-offset $top-offset $blur $height $color;
+    box-shadow: $left-offset $top-offset $blur $height $color;
+}
+
+@mixin inset-shadow($left-offset:0, $top-offset:5px, $blur:5px, $height:0, $color:#222){
+    -moz-box-shadow: inset $left-offset $top-offset $blur $height $color;
+    -webkit-box-shadow: inset $left-offset $top-offset $blur $height $color;
+    box-shadow: inset $left-offset $top-offset $blur $height $color;
+}
+
+
+@mixin no-drop-shadow(){
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@mixin text-shadow($horizontal:1px, $vertical:1px, $blur:1px, $color:#222){
+    text-shadow: $horizontal $vertical $blur $color;
+    filter: dropshadow(color=$color, offx=1, offy=1);
+}
+
+
+@mixin bg-gradient($from:#222, $to:#fff, $from-percentage:0%, $to-percentage:100%){
+    background: -moz-linear-gradient(top, $from $from-percentage, $to $to-percentage);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-percentage,$from), color-stop($to-percentage,$to));
+    background: -webkit-linear-gradient(top, $from $from-percentage,$to $to-percentage);
+    background: -o-linear-gradient(top, $from $from-percentage,$to $to-percentage);
+    background: -ms-linear-gradient(top, $from $from-percentage,$to $to-percentage);
+    background: linear-gradient(to bottom, $from $from-percentage,$to $to-percentage);  
+}
+
+@mixin rotate($amount:0){
+    transform: rotate($amount+deg);
+    -ms-transform: rotate($amount+deg);
+    -webkit-transform: rotate($amount+deg);
+    -o-transform: rotate($amount+deg);
+    -moz-transform: rotate($amount+deg);
+}
+
+@mixin transition($what:all, $speed:0.3s, $easing:linear){
+    -moz-transition: $what $speed $easing;
+    -webkit-transition: $what $speed $easing;
+    -o-transition: $what $speed $easing;
+    transition: $what $speed $easing;
+} 
+
+@mixin translate($from:0px, $to:20px){
+    -webkit-transform: translate($from, $to);
+    -moz-transform: translate($from, $to);
+    -ms-transform: translate($from, $to);
+    -o-transform: translate($from, $to);
+    transform: translate($from, $to);
+}
+
+@mixin opacity($amount:0.5, $r:255, $g:255, $b:255){
+    background: rgba($r, $g, $b, $amount);
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")
+    + ie-hex-str(rgba($r, $g, $b, $amount))
+    + unquote("', endColorstr='")
+    + ie-hex-str(rgba($r, $g, $b, $amount))
+    + unquote("',GradientType=0)"); /* IE6-9 */
+}
+
+@mixin greyscale($url){
+    @if $url != ''{
+        filter: url($url+'#grayscale');
+    }
+    filter: gray; 
+    -webkit-filter: grayscale(1);
+}
+
+@mixin no-greyscale(){
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+

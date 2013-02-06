@@ -1,0 +1,163 @@
+/* IE STYLESHEET */
+.mobile-nav {
+  display: none; }
+
+#main-nav {
+  position: fixed;
+  z-index: 4;
+  width: 96%;
+  padding: 0 2% 0 2%;
+  left: 0;
+  height: auto;
+  top: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#main-nav ul {
+  border-left: 1px solid #444; }
+
+#main-nav .center-content {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 90%;
+  padding: 0 5% 0 5%; }
+
+#main-nav ul li {
+  border-right: 1px solid #444;
+  width: 24.5%; }
+
+#main-nav ul li a {
+  margin: 0;
+  padding: 10px 0 10px 0; }
+
+body.css-nav-open #main-nav,
+#main-nav {
+  left: 0 !important;
+  position: fixed; }
+
+body.css-nav-open #main,
+#main {
+  width: 100%;
+  left: 0 !important;
+  position: relative; }
+
+body.css-nav-open .push,
+.push
+body.css-nav-open #site-footer,
+#site-footer {
+  display: block; }
+
+#accordian .accordian-slide {
+  border-left: 3px solid #999999; }
+
+form input {
+  width: 96%;
+  padding: 2%; }
+
+form input[type='search'] {
+  width: 95%; }
+
+.grid-1 {
+  width: 5.78704%; }
+
+.grid-2 {
+  width: 14.35185%; }
+
+.grid-3 {
+  width: 22.91667%; }
+
+.grid-4 {
+  width: 31.48148%; }
+
+.grid-5 {
+  width: 40.0463%; }
+
+.grid-6 {
+  width: 48.61111%; }
+
+.grid-7 {
+  width: 57.17593%; }
+
+.grid-8 {
+  width: 65.74074%; }
+
+.grid-9 {
+  width: 74.30556%; }
+
+.grid-10 {
+  width: 82.87037%; }
+
+.grid-11 {
+  width: 91.43519%; }
+
+.grid-12 {
+  width: 100.0%; }
+
+.col {
+  margin: 0 2.77778% 0 0; }
+
+.end {
+  margin: 0; }
+
+#header {
+  height: 81px; }
+
+#main {
+  padding: 75px 0 0 0; }
+
+#main-nav ul li a {
+  padding: 25px 0 27px 15px; }
+
+#accordian .accordian-slide {
+  border-left: 7px solid #999999; }
+
+form input {
+  width: 55%;
+  padding: 2%; }
+
+form label {
+  width: 40%; }
+
+form input[type='search'] {
+  width: 55%; }
+
+progress,
+meter {
+  width: 59%; }
+
+#main {
+  padding: 55px 0 0 0; }
+
+#header {
+  height: 53px; }
+
+h1 {
+  text-indent: 0px;
+  margin: 15px 0 0 0;
+  line-height: 1.0em; }
+
+#gallery-container {
+  width: 60%; }
+
+#main-nav ul {
+  width: auto; }
+
+#main-nav ul li {
+  width: 125px; }
+
+#main-nav ul li a {
+  padding: 14px 0 14px 0;
+  text-align: center;
+  margin: 0;
+  line-height: 1.6em; }
+
+#accordian .accordian-slide {
+  border-left: 10px solid #999999; }
+
+form input {
+  width: 57%;
+  padding: 1%; }
+
+form input[type='search'] {
+  width: 57%; }
