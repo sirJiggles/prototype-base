@@ -2,3 +2,4 @@
 /assests/sass*
 /assetss/.sass-cache*
 /.DS_Store
+.sass-cache*
