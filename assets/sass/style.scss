@@ -38,7 +38,7 @@ body{
 }
 
 #main{
-    padding:65px 0 0 0;
+    padding:35px 0 0 0;
     @include block-left;
     width:100%;
     @include transition(left, 0.3s, linear);

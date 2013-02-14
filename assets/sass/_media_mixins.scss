@@ -9,8 +9,12 @@
         border-bottom:none;
     }
     
+    #main-nav{
+        margin:0;
+    }
+    
     #main-nav ul{
-        margin:0 0 -45px 0;
+        margin:0;
     }
     
     #site-wrapper,
@@ -18,50 +22,12 @@
         padding-left:10%;
         width:90%;
     }
-
-    .mobile-nav{
-        //display:none;
+    
+    #main{
+        padding-top:5px;
     }
 
-    /*#main-nav{
-        display:block !important;
-        position:fixed;
-        z-index: 4;
-        width: 96%;
-        padding: 0 2% 0 2%;
-        left: 0;
-        height:auto;
-        top:0;
-    }
-
-    #main-nav ul{
-        border-left:1px solid #444;
-        border-bottom:none;
-        margin:0;
-    }
-
-    #main-nav .center-content{
-        margin:0 auto;
-        max-width: $site-width+px;
-        width: 90%;
-        padding: 0 5% 0 5%;
-    }
-
-    #main-nav ul li{
-        border-right:1px solid #444;
-        width:16%;
-    }
-
-    #main-nav ul li a{
-        margin:0;
-        padding:10px 0 10px 0;
-        width:100%;
-        text-align:center;
-    }
-
-
-*/
-  
+    
     // ACCORDIAN
     #accordian .accordian-slide{
         border-left:3px solid $secondary-color;
@@ -81,9 +47,58 @@
 }
 
 @mixin tablet-styles(){
+    
+    .mobile-nav{
+        display:none;
+    }
+    
+    
+    #header {
+        height:48px;
+        width:100%;
+        border-right:none;
+        border-bottom:3px solid #999999;
+    }
+    
+    #site-wrapper,
+    #site-footer{
+        padding-left:0%;
+        width:100%;
+    }
+    
+    #main-nav{
+        z-index: 4;
+        //width: 92%;
+        //padding: 0 4% 0 4%;
+        left: 0;
+        height: auto;
+        top: 0;
+        display:block;
+        position:fixed;
+    }
+    
+    #main-nav ul{
+        border:none;
+    }
+    
+    #main-nav .center-content{
+        margin: 0 auto;
+        width: 90%;
+        padding: 0 5% 0 5%;
+    }
+    
+    #main-nav ul li{
+        width:16%;
+    }
+    
+    #main-nav ul li a{
+        text-align:center;
+        padding:10px 0;
+        width:100%;
+    }
 
-	// Generate grid
-   @for $i from 1 through $cols {
+    // Generate grid
+    @for $i from 1 through $cols {
         $new-width: ($col-width * $i ) + ($gutter-width * ($i - 1));
         .grid-#{$i} {
             width: $new-width;
@@ -97,18 +112,10 @@
         margin: 0;
     }
 
-    // HEADER
-    #header {
-        height:81px;
-    }
+ 
 
     #main{
-        padding:75px 0 0 0;
-    }
-
-    // NAV AMENDS
-    #main-nav ul li a{
-        padding:26px 0 27px 0;
+        padding:45px 0 0 0;
     }
 
     // ACCORDIAN
@@ -165,17 +172,19 @@
 @mixin desktop-styles(){
     
     #main{
-        padding:55px 0 0 0;
+        padding:0;
     }
     
     #header{
         height:53px;
+        position:relative;
     }
+
     
     h1{
-        text-indent:0px;
         margin:15px 0 0 0;
         line-height:1.0em;
+        display:block;
     }
 
     #gallery-container{
@@ -184,6 +193,12 @@
     
     .grid-9 #gallery-container{
         width:100%;
+    }
+    
+    #main-nav{
+        position:relative;
+        margin-top:-56px;
+        
     }
 
     #main-nav ul{

@@ -33,3 +33,15 @@
     width: $new-width+px;
   }
 }
+
+/* Min widths on fixed width version of site */
+#site-footer,
+#header,
+#content-wrapper,
+#main-nav{
+    min-width:($site-width + ($site-width / 10))+px;
+} 
+
+#site-wrapper{
+    overflow:visible;
+}  

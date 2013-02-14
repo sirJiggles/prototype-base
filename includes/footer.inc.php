@@ -8,6 +8,8 @@
         </div>
         <!-- end center content -->
         
+        </div>
+        
         <!-- for sticky footer -->
         <div class="push"></div>
         

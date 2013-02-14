@@ -62,28 +62,27 @@ $currentPage = str_replace('.php', '', end(explode('/', $_SERVER['SCRIPT_FILENAM
 
             <header id="header" class="col grid-12 end" role="banner">
                 <div class="center-content">
-
                     <a href="#" class="mobile-nav" title="Main navigation"><span class="icon">&#9776;</span></a>
-                    
-                    
-
-                    <h1>SITE TITLE</h1>
-
                 </div>
             </header>
             
             <nav id="main-nav" role="navigation" class="col grid-12 end">
-                <ul>
-                    <li><a href="index.php" title="Home" <?php echo ($currentPage == 'index') ? "class='active'" : ''; ?>>Home</a></li>
-                    <li><a href="article.php" title="Article" <?php echo ($currentPage == 'article') ? "class='active'" : ''; ?>>Article</a></li>
-                    <li><a href="gallery.php" title="Gallery" <?php echo ($currentPage == 'gallery') ? "class='active'" : ''; ?>>Gallery</a></li>
-                    <li><a href="news.php" title="News" <?php echo ($currentPage == 'news') ? "class='active'" : ''; ?>>News</a></li>
-                    <li><a href="accordion.php" title="Accordion" <?php echo ($currentPage == 'accordion') ? "class='active'" : ''; ?>>Accordion</a></li>
-                    <li><a href="contact.php" title="Contact" <?php echo ($currentPage == 'contact') ? "class='active'" : ''; ?>>Contact</a></li>
-                </ul>
+                <div class="center-content">
+                    <h1>SITE TITLE</h1>
+                    <ul>
+                        <li><a href="index.php" title="Home" <?php echo ($currentPage == 'index') ? "class='active'" : ''; ?>>Home</a></li>
+                        <li><a href="article.php" title="Article" <?php echo ($currentPage == 'article') ? "class='active'" : ''; ?>>Article</a></li>
+                        <li><a href="gallery.php" title="Gallery" <?php echo ($currentPage == 'gallery') ? "class='active'" : ''; ?>>Gallery</a></li>
+                        <li><a href="news.php" title="News" <?php echo ($currentPage == 'news') ? "class='active'" : ''; ?>>News</a></li>
+                        <li><a href="accordion.php" title="Accordion" <?php echo ($currentPage == 'accordion') ? "class='active'" : ''; ?>>Accordion</a></li>
+                        <li><a href="contact.php" title="Contact" <?php echo ($currentPage == 'contact') ? "class='active'" : ''; ?>>Contact</a></li>
+                    </ul>
+                </div>
             </nav>
-
-            <div class="center-content main-content" id="main-wrapper">
+            
+            
+            <div id="content-wrapper">
+                <div class="center-content main-content">
 
 
 
